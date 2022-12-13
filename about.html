@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>        
+
+
+</section>
+
+
+<!------------------- about us content ---------->
+
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest university</h1>
+            <p>One of the great things about being able to choose your own courses is that you get the opportunity 
+                to explore. You can try classes in a lot of different subjects, or you can dive right into a favorite subject.
+                 You may choose to begin training for a career right away. Or you may pick a major after taking some time to 
+                 check out your options. Colleges offer classes and majors in subjects you've studied in high school — plus 
+                 many more that you haven't.</p>
+                 <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/group meetings1.jpg">
+        </div>
+    </div>
+</section>
+
+
+<!---------- Footer ------------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>College Board is a mission-driven not-for-profit organization that connects <br>students to college success and opportunity.
+         Founded in 1900, College Board was created to expand access to higher education.
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made By <i class="fa fa-heart-o"></i> YASH RAJ</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------Java script for toggle menu--------->
+<script>
+    
+    var navLinks = document.getElementById("navLinks"); 
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
